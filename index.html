@@ -13,19 +13,28 @@
         background-color:#98E3A3;
       }
     </style>
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
   </head>
   <body>
     <div id="main">
       <div id="header"><h1>Scientific Notation Facts</h1></div>
       <div id="bulk_text">
-        <div id="number1">The number of possible solvable states on a 3x3 rubik's cube is 4.32e19</div><br>
+        <div id="number1">The number of possible solvable states on a 3x3 rubik's cube is 4.32e19</div>
         <div id ="number2">The number of grains of sand on earth is approximately 7.5e18<div/>
+        <div id="number3">If we had 2 immortal guinea pigs that never stopped making babies after 25 generations we would have 3.3e7 pigs <br> <div id="twitch-embed"></div></div>
+        <div id="number4">The chance of winning the powerball jackpot is about 1 in 2.922e8</div>
+        <div id="number5"></div>
       </div>
     </div>
     <script>
       var box = document.getElementById("main");
       box.width = window.innerWidth - 30;
       box.height = window.innerHeight - 15;
+    </script>
+    <script type="text/javascript">
+      new Twitch.Player("twitch-embed", {
+        channel: "ziggyandpuff"
+      });
     </script>
   </body>
 </html>
