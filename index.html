@@ -28,8 +28,8 @@
     </div>
     <script>
       var box = document.getElementById("main");
-      box.width = window.innerWidth - 30;
-      box.height = window.innerHeight - 15;
+      box.setAttribute("style","width:"+toString(window.innerWidth - 30)+"px");
+      box.setAttribute("style","height:"+toString(window.innerHeight - 15)+"px");
     </script>
     <script type="text/javascript">
       new Twitch.Player("twitch-embed", {
